@@ -10,6 +10,18 @@ namespace Exercise1
     {
         private string name;
         private string degree;
-        private 
+        private string institution;
+
+        public string Degree
+        {
+            get;
+            set;
+        }
+
+        public string Institution
+        {
+            get;
+            set;
+        }
     }
 }
