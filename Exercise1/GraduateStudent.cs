@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Exercise1
 {
-    public class Student
+    public class GraduateStudent : Student
     {
         private string name;
-        public string Name
-        {
-            get;
-            set;
-        }
+        private string degree;
+        private 
     }
 }

@@ -10,38 +10,21 @@ namespace Exercise1
     {
         private string name;
         private string classification;
-        private string[] classifications = {
-            "Freshman",
-            "Sophomore",
-            "Junior",
-            "Senior"
-        };
         private string guardianName;
         private string guardianAddress;
 
         public string Classification
         {
             get;
-            set
-            {
-                foreach (string gradeYear in classifications)
-                {
-                    if (gradeYear.Equals(value, StringComparison.OrdinalIgnoreCase))
-                    {
-                        classification = value;
-                        return;
-                    }
-                }
-            }
+            set;
         }
-
-        public string guardianName
+        public string GuardianName
         {
             get;
             set;
         }
 
-        public string guardianAddress
+        public string GuardianAddress
         {
             get;
             set;
