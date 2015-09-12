@@ -12,6 +12,11 @@ namespace Exercise1
         private string degree;
         private string institution;
 
+        public string Name
+        {
+            get;
+            set;
+        }
         public string Degree
         {
             get;

@@ -8,10 +8,20 @@ namespace Exercise1
 {
     public class UnderGraduate : Student
     {
-        private string name;
         private string classification;
         private string guardianName;
         private string guardianAddress;
+
+        public UnderGraduate(string name, 
+                             string classification, 
+                             string guardianName,
+                             string guardianAddress) : base(name)
+        {
+            this.classification = classification;
+            this.guardianName = guardianName;
+            this.guardianAddress = guardianAddress;
+            base.Name = name;
+        }
 
         public string Classification
         {

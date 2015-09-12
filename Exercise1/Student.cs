@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 
 namespace Exercise1
 {
-    public class Student
+    public abstract class Student
     {
         private string name;
         public string Name
         {
             get;
             set;
+        }
+
+        protected Student(string name)
+        {
+            this.name = name;
+        }
+
+        public string toString()
+        {
+            return name;
         }
     }
 }
