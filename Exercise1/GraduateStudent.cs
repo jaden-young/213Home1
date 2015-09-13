@@ -8,15 +8,19 @@ namespace Exercise1
 {
     public class GraduateStudent : Student
     {
-        private string name;
         private string degree;
         private string institution;
 
-        public string Name
+        public GraduateStudent (string name,
+                                string degree,
+                                string institution)
+                                : base(name)
         {
-            get;
-            set;
+            base.Name = name;
+            this.degree = degree;
+            this.institution = institution;
         }
+
         public string Degree
         {
             get;
@@ -27,6 +31,15 @@ namespace Exercise1
         {
             get;
             set;
+        }
+
+        public new string toString() {
+            return String.Format("{0, -12}: {1}\n" +
+                                 "{2, -12}: {3}\n" +
+                                 "{4, -12}: {5}\n",
+                                 "Name", Name,
+                                 "Degree", Degree,
+                                 "Institution", Institution);
         }
     }
 }

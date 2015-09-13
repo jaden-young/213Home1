@@ -12,6 +12,7 @@ namespace Exercise1
 {
     public partial class formMain : Form
     {
+
         public formMain()
         {
             InitializeComponent();
@@ -35,6 +36,32 @@ namespace Exercise1
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            formAddStudent addForm = new formAddStudent(this);
+            addForm.Show(this);
+        }
+
+        public void addUnderGraduate(UnderGraduate newStudent)
+        {
+            rTextBoxUnder.AppendText(newStudent.toString());
+        }
+
+        public void addGraduateStudent(GraduateStudent newStudent)
+        {
+            rTextBoxGrad.AppendText(newStudent.toString());
+        }
+
+        private void buttonUndergraduateClear_Click(object sender, EventArgs e)
+        {
+            rTextBoxUnder.Clear();
+        }
+
+        private void buttonGraduateClear_Click(object sender, EventArgs e)
+        {
+            rTextBoxGrad.Clear();
         }
     }
 }
