@@ -8,10 +8,7 @@ namespace Exercise1
 {
     public class UnderGraduate : Student
     {
-        private string classification;
-        private string guardianName;
-        private string guardianAddress;
-
+      
         // name field is handled by Student base class
         public UnderGraduate(string name, 
                              string classification, 
@@ -20,9 +17,9 @@ namespace Exercise1
                              : base(name)
         {
             base.Name = name;
-            this.classification = classification;
-            this.guardianName = guardianName;
-            this.guardianAddress = guardianAddress;
+            this.Classification = classification;
+            this.GuardianName = guardianName;
+            this.GuardianAddress = guardianAddress;
         }
 
         public string Classification
@@ -55,7 +52,7 @@ namespace Exercise1
                                  "{4, -20}: {5}\n" +
                                  "{6, -20}: {7}\n",
                                  "Name", Name,
-                                 "Classification", classification,
+                                 "Classification", Classification,
                                  "Guardian's Name", GuardianName, 
                                  "Guardian's Address", GuardianAddress);
         }

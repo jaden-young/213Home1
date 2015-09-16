@@ -8,8 +8,6 @@ namespace Exercise1
 {
     public class GraduateStudent : Student
     {
-        private string degree;
-        private string institution;
 
         public GraduateStudent (string name,
                                 string degree,
@@ -17,8 +15,8 @@ namespace Exercise1
                                 : base(name)
         {
             base.Name = name;
-            this.degree = degree;
-            this.institution = institution;
+            Degree = degree;
+            Institution = institution;
         }
 
         public string Degree

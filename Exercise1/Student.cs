@@ -8,7 +8,7 @@ namespace Exercise1
 {
     public abstract class Student
     {
-        private string name;
+
         public string Name
         {
             get;
@@ -17,12 +17,12 @@ namespace Exercise1
 
         protected Student(string name)
         {
-            this.name = name;
+            Name = name;
         }
 
         public string toString()
         {
-            return name;
+            return Name;
         }
     }
 }
