@@ -45,16 +45,17 @@
             this.groupBoxUndergraduate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxUndergraduate.Location = new System.Drawing.Point(12, 12);
             this.groupBoxUndergraduate.Name = "groupBoxUndergraduate";
-            this.groupBoxUndergraduate.Size = new System.Drawing.Size(303, 366);
+            this.groupBoxUndergraduate.Size = new System.Drawing.Size(372, 366);
             this.groupBoxUndergraduate.TabIndex = 0;
             this.groupBoxUndergraduate.TabStop = false;
             this.groupBoxUndergraduate.Text = "Undergraduate Students";
             // 
             // rTextBoxUnder
             // 
+            this.rTextBoxUnder.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rTextBoxUnder.Location = new System.Drawing.Point(6, 25);
             this.rTextBoxUnder.Name = "rTextBoxUnder";
-            this.rTextBoxUnder.Size = new System.Drawing.Size(289, 335);
+            this.rTextBoxUnder.Size = new System.Drawing.Size(360, 335);
             this.rTextBoxUnder.TabIndex = 0;
             this.rTextBoxUnder.Text = "";
             // 
@@ -62,25 +63,26 @@
             // 
             this.groupBoxGraduate.Controls.Add(this.rTextBoxGrad);
             this.groupBoxGraduate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxGraduate.Location = new System.Drawing.Point(415, 12);
+            this.groupBoxGraduate.Location = new System.Drawing.Point(484, 12);
             this.groupBoxGraduate.Name = "groupBoxGraduate";
-            this.groupBoxGraduate.Size = new System.Drawing.Size(302, 366);
+            this.groupBoxGraduate.Size = new System.Drawing.Size(372, 366);
             this.groupBoxGraduate.TabIndex = 1;
             this.groupBoxGraduate.TabStop = false;
             this.groupBoxGraduate.Text = "Graduate Students";
             // 
             // rTextBoxGrad
             // 
+            this.rTextBoxGrad.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rTextBoxGrad.Location = new System.Drawing.Point(6, 25);
             this.rTextBoxGrad.Name = "rTextBoxGrad";
-            this.rTextBoxGrad.Size = new System.Drawing.Size(289, 335);
+            this.rTextBoxGrad.Size = new System.Drawing.Size(360, 335);
             this.rTextBoxGrad.TabIndex = 1;
             this.rTextBoxGrad.Text = "";
             // 
             // buttonAdd
             // 
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(321, 184);
+            this.buttonAdd.Location = new System.Drawing.Point(390, 179);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(88, 31);
             this.buttonAdd.TabIndex = 2;
@@ -91,7 +93,7 @@
             // buttonUndergraduateClear
             // 
             this.buttonUndergraduateClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUndergraduateClear.Location = new System.Drawing.Point(123, 384);
+            this.buttonUndergraduateClear.Location = new System.Drawing.Point(157, 384);
             this.buttonUndergraduateClear.Name = "buttonUndergraduateClear";
             this.buttonUndergraduateClear.Size = new System.Drawing.Size(90, 31);
             this.buttonUndergraduateClear.TabIndex = 4;
@@ -102,7 +104,7 @@
             // buttonGraduateClear
             // 
             this.buttonGraduateClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGraduateClear.Location = new System.Drawing.Point(537, 384);
+            this.buttonGraduateClear.Location = new System.Drawing.Point(642, 384);
             this.buttonGraduateClear.Name = "buttonGraduateClear";
             this.buttonGraduateClear.Size = new System.Drawing.Size(90, 31);
             this.buttonGraduateClear.TabIndex = 5;
@@ -114,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 429);
+            this.ClientSize = new System.Drawing.Size(869, 435);
             this.Controls.Add(this.buttonGraduateClear);
             this.Controls.Add(this.buttonUndergraduateClear);
             this.Controls.Add(this.buttonAdd);

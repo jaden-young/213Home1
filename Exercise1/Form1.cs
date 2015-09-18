@@ -39,12 +39,12 @@ namespace Exercise1
 
         public void addUnderGraduate(UnderGraduate newStudent)
         {
-            rTextBoxUnder.AppendText(newStudent.toString());
+            rTextBoxUnder.AppendText(newStudent.toString() + "\n");
         }
 
         public void addGraduateStudent(GraduateStudent newStudent)
         {
-            rTextBoxGrad.AppendText(newStudent.toString());
+            rTextBoxGrad.AppendText(newStudent.toString() + "\n");
         }
 
         private void buttonUndergraduateClear_Click(object sender, EventArgs e)
