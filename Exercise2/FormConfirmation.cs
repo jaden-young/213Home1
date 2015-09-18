@@ -14,6 +14,9 @@ namespace Exercise2
     {
         private FormMain mainForm;
 
+        // Require an object of FormMain to construct
+        // no point in showing this form without access to 
+        // user selections
         public FormConfirmation(FormMain starterForm) 
         {
             InitializeComponent();
@@ -26,7 +29,8 @@ namespace Exercise2
         {
             mainForm.clearSelections();
             this.Hide();
-            MessageBox.Show("Your reservations have been saved!");
+            MessageBox.Show("Your reservations have been saved!\n"
+                            + "Ready for next user.");
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

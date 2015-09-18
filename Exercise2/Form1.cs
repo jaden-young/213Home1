@@ -43,6 +43,8 @@ namespace Exercise2
             {
                 return selections;
             }
+            // setter is private to prevent changes being made
+            // from confirmation form
             private set
             {
                 selections = value;
@@ -50,10 +52,15 @@ namespace Exercise2
         }
         private void btnOK_Click(object sender, EventArgs e)
         {
+            // reset resultant string to empty
             Selections = "";
+
+            // StringBuilder, while not as pretty as concatenation, is 
+            // much more efficient.
             StringBuilder selectionsB = new StringBuilder();
             if (chkBoxSkiBoots.Checked)
             {
+                selectionsB.AppendLine();
                 selectionsB.Append("Size ");
                 selectionsB.Append(upDownSize.Text);
                 selectionsB.AppendLine(" Ski boots");
@@ -77,13 +84,16 @@ namespace Exercise2
             if (chkBoxSnowGloves.Checked)
             {
                 selectionsB.AppendLine("Snow Gloves");
-                selectionsB.AppendLine();
             }
             Selections = selectionsB.ToString();
+
+            // Show a confirmation form, passing this form as an argument
+            // to allow the new form to read which boxes are checked
             FormConfirmation confForm = new FormConfirmation(this);
             confForm.Show();
         }
 
+        // Uncheckes all boxes
         public void clearSelections()
         {
             chkBoxSkiBoots.Checked = false;
