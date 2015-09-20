@@ -43,7 +43,7 @@
             // 
             this.groupBoxUndergraduate.Controls.Add(this.rTextBoxUnder);
             this.groupBoxUndergraduate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxUndergraduate.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxUndergraduate.Location = new System.Drawing.Point(14, 17);
             this.groupBoxUndergraduate.Name = "groupBoxUndergraduate";
             this.groupBoxUndergraduate.Size = new System.Drawing.Size(372, 366);
             this.groupBoxUndergraduate.TabIndex = 0;
@@ -58,12 +58,14 @@
             this.rTextBoxUnder.Size = new System.Drawing.Size(360, 335);
             this.rTextBoxUnder.TabIndex = 0;
             this.rTextBoxUnder.Text = "";
+            this.rTextBoxUnder.Visible = false;
+            this.rTextBoxUnder.TextChanged += new System.EventHandler(this.rTextBoxUnder_TextChanged);
             // 
             // groupBoxGraduate
             // 
             this.groupBoxGraduate.Controls.Add(this.rTextBoxGrad);
             this.groupBoxGraduate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxGraduate.Location = new System.Drawing.Point(484, 12);
+            this.groupBoxGraduate.Location = new System.Drawing.Point(486, 17);
             this.groupBoxGraduate.Name = "groupBoxGraduate";
             this.groupBoxGraduate.Size = new System.Drawing.Size(372, 366);
             this.groupBoxGraduate.TabIndex = 1;
@@ -78,11 +80,12 @@
             this.rTextBoxGrad.Size = new System.Drawing.Size(360, 335);
             this.rTextBoxGrad.TabIndex = 1;
             this.rTextBoxGrad.Text = "";
+            this.rTextBoxGrad.Visible = false;
             // 
             // buttonAdd
             // 
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(390, 179);
+            this.buttonAdd.Location = new System.Drawing.Point(392, 184);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(88, 31);
             this.buttonAdd.TabIndex = 2;
@@ -93,7 +96,7 @@
             // buttonUndergraduateClear
             // 
             this.buttonUndergraduateClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUndergraduateClear.Location = new System.Drawing.Point(157, 384);
+            this.buttonUndergraduateClear.Location = new System.Drawing.Point(159, 389);
             this.buttonUndergraduateClear.Name = "buttonUndergraduateClear";
             this.buttonUndergraduateClear.Size = new System.Drawing.Size(90, 31);
             this.buttonUndergraduateClear.TabIndex = 4;
@@ -104,7 +107,7 @@
             // buttonGraduateClear
             // 
             this.buttonGraduateClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGraduateClear.Location = new System.Drawing.Point(642, 384);
+            this.buttonGraduateClear.Location = new System.Drawing.Point(644, 389);
             this.buttonGraduateClear.Name = "buttonGraduateClear";
             this.buttonGraduateClear.Size = new System.Drawing.Size(90, 31);
             this.buttonGraduateClear.TabIndex = 5;
@@ -116,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 435);
+            this.ClientSize = new System.Drawing.Size(869, 437);
             this.Controls.Add(this.buttonGraduateClear);
             this.Controls.Add(this.buttonUndergraduateClear);
             this.Controls.Add(this.buttonAdd);

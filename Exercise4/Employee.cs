@@ -35,7 +35,7 @@ namespace Exercise4
             {
                 throw;
             }
-
+            // Calculate pay, accounting for overtime.
             if (hours > 40)
             {
                 pay = 40 * rate;
@@ -67,13 +67,14 @@ namespace Exercise4
             }
             set
             {
-                if (value > 0)
+                if (value >= 2.13M)
                 {
                     rate = value;
                 }
                 else
                 {
-                    throw new ArgumentException("ERROR: Pay rate must be a postive number.");
+                    throw new ArgumentException("ERROR: Pay rate must at least the " + 
+                                                 "federal tipped minimum wage of $2.13");
                 }
             }
         }
@@ -92,7 +93,7 @@ namespace Exercise4
                 }
                 else
                 {
-                    throw new ArgumentException("ERROR: Pay rate must be a positive number.");
+                    throw new ArgumentException("ERROR: Hours worked must be a positive number.");
                 }
             }
         }

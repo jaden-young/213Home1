@@ -35,12 +35,12 @@
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.grpBoxEditor = new System.Windows.Forms.GroupBox();
+            this.lblFailure = new System.Windows.Forms.Label();
+            this.lblSuccess = new System.Windows.Forms.Label();
             this.bttnChooseFile = new System.Windows.Forms.Button();
             this.bttnAdd = new System.Windows.Forms.Button();
             this.bttnClear = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.lblSuccess = new System.Windows.Forms.Label();
-            this.lblFailure = new System.Windows.Forms.Label();
             this.grpBoxEditor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,6 +116,27 @@
             this.grpBoxEditor.TabStop = false;
             this.grpBoxEditor.Text = "Add a person to the file";
             // 
+            // lblFailure
+            // 
+            this.lblFailure.AutoSize = true;
+            this.lblFailure.Location = new System.Drawing.Point(22, 208);
+            this.lblFailure.Name = "lblFailure";
+            this.lblFailure.Size = new System.Drawing.Size(94, 13);
+            this.lblFailure.TabIndex = 7;
+            this.lblFailure.Text = "Person not added.";
+            this.lblFailure.Visible = false;
+            // 
+            // lblSuccess
+            // 
+            this.lblSuccess.AutoSize = true;
+            this.lblSuccess.Location = new System.Drawing.Point(22, 208);
+            this.lblSuccess.Name = "lblSuccess";
+            this.lblSuccess.Size = new System.Drawing.Size(183, 13);
+            this.lblSuccess.TabIndex = 6;
+            this.lblSuccess.Text = "Person has been added successfully!";
+            this.lblSuccess.Visible = false;
+            this.lblSuccess.Click += new System.EventHandler(this.lblSuccess_Click);
+            // 
             // bttnChooseFile
             // 
             this.bttnChooseFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,30 +174,9 @@
             // 
             this.saveFileDialog1.DefaultExt = "txt";
             this.saveFileDialog1.FileName = "PersonList";
-            this.saveFileDialog1.Filter = "Text Files|.txt";
+            this.saveFileDialog1.Filter = "Text Files (*.txt)|.txt";
             this.saveFileDialog1.Title = "Save As";
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
-            // 
-            // lblSuccess
-            // 
-            this.lblSuccess.AutoSize = true;
-            this.lblSuccess.Location = new System.Drawing.Point(22, 208);
-            this.lblSuccess.Name = "lblSuccess";
-            this.lblSuccess.Size = new System.Drawing.Size(183, 13);
-            this.lblSuccess.TabIndex = 6;
-            this.lblSuccess.Text = "Person has been added successfully!";
-            this.lblSuccess.Visible = false;
-            this.lblSuccess.Click += new System.EventHandler(this.lblSuccess_Click);
-            // 
-            // lblFailure
-            // 
-            this.lblFailure.AutoSize = true;
-            this.lblFailure.Location = new System.Drawing.Point(22, 208);
-            this.lblFailure.Name = "lblFailure";
-            this.lblFailure.Size = new System.Drawing.Size(94, 13);
-            this.lblFailure.TabIndex = 7;
-            this.lblFailure.Text = "Person not added.";
-            this.lblFailure.Visible = false;
             // 
             // FormMain
             // 

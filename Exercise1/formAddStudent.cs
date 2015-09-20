@@ -14,22 +14,26 @@ namespace Exercise1
     {
         private formMain mainForm;
         
-        
-        public formAddStudent()
+        // No default constructor is provided because this form
+        // is useless without the ability to add to the contents
+        // of the main form's student roster
+        public formAddStudent(formMain starterForm)
         {
             InitializeComponent();
-        }
-
-        public formAddStudent(formMain starterForm) : this()
-        {
             mainForm = starterForm;
         }
 
+
+        // I really wish visual studio didn't yell at me
+        // for removing useless auto implemented code like this
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
+        // Changes which editor is visible based on which radio button
+        // is checked. Both graduate and undergraduate are handled by
+        // a change in the undergraduate button.
         private void radioButtonUndergraduate_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButtonUndergraduate.Checked)
@@ -43,12 +47,14 @@ namespace Exercise1
                 groupBoxGraduate.Visible = true;
             }
         }
-
+        
         private void radioButtonGraduate_CheckedChanged(object sender, EventArgs e)
         {
-           
+           // do nothing
+           // code here would be redundant, handled by Undergraduate radio button
         }
 
+        // Adds the student to the roster on the main form
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             if (radioButtonUndergraduate.Checked)

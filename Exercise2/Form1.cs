@@ -22,6 +22,8 @@ namespace Exercise2
 
         }
 
+        // Shows an additional option to select the size of Ski Boots when
+        // a user opts to reserve them
         private void chkBoxSkiBoots_CheckedChanged(object sender, EventArgs e)
         {
             if (chkBoxSkiBoots.Checked)

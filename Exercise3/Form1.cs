@@ -45,16 +45,20 @@ namespace Exercise3
                 Person myPerson = new Person(txtBoxName.Text, 
                                              txtBoxEmail.Text, 
                                              mTxtBoxPhoneNumber.Text);
-                TextWriter writer = new StreamWriter(filePath, true);
-                
-                writer.WriteLine(myPerson.Name + ", " +
+               
+                // using statement automatically handles resources,
+                // no need to manually close stream
+                using (TextWriter writer = new StreamWriter(filePath, true))
+                {
+                    writer.WriteLine(myPerson.Name + ", " +
                                  myPerson.Email + ", " +
                                  myPerson.PhoneNumber);
-                writer.Close();
-                bttnClear.PerformClick();
-                lblSuccess.Visible = true;
-                lblFailure.Visible = false;
+                    bttnClear.PerformClick();
+                    lblSuccess.Visible = true;
+                    lblFailure.Visible = false;
+                }
             }
+            
             catch (ArgumentException ae)
             {
                 MessageBox.Show(ae.Message);

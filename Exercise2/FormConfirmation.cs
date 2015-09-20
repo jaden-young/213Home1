@@ -29,6 +29,8 @@ namespace Exercise2
         {
             mainForm.clearSelections();
             this.Hide();
+            // They aren't actually saved in any sort of data structure.
+            // Not part of the assignment.
             MessageBox.Show("Your reservations have been saved!\n"
                             + "Ready for next user.");
         }

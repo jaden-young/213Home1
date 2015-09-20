@@ -39,7 +39,7 @@
             // lblOK
             // 
             this.lblOK.AutoSize = true;
-            this.lblOK.Location = new System.Drawing.Point(52, 188);
+            this.lblOK.Location = new System.Drawing.Point(169, 188);
             this.lblOK.Name = "lblOK";
             this.lblOK.Size = new System.Drawing.Size(76, 13);
             this.lblOK.TabIndex = 1;
@@ -59,7 +59,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(94, 215);
+            this.btnCancel.Location = new System.Drawing.Point(327, 215);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 7;
@@ -72,7 +72,7 @@
             this.grpBoxSelections.Controls.Add(this.lblSelections);
             this.grpBoxSelections.Location = new System.Drawing.Point(12, 12);
             this.grpBoxSelections.Name = "grpBoxSelections";
-            this.grpBoxSelections.Size = new System.Drawing.Size(157, 173);
+            this.grpBoxSelections.Size = new System.Drawing.Size(390, 173);
             this.grpBoxSelections.TabIndex = 8;
             this.grpBoxSelections.TabStop = false;
             this.grpBoxSelections.Text = "You have selected:";
@@ -80,7 +80,7 @@
             // lblSelections
             // 
             this.lblSelections.AutoSize = true;
-            this.lblSelections.Location = new System.Drawing.Point(6, 16);
+            this.lblSelections.Location = new System.Drawing.Point(157, 16);
             this.lblSelections.Name = "lblSelections";
             this.lblSelections.Size = new System.Drawing.Size(0, 13);
             this.lblSelections.TabIndex = 0;
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(186, 250);
+            this.ClientSize = new System.Drawing.Size(414, 264);
             this.Controls.Add(this.grpBoxSelections);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);

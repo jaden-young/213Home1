@@ -31,14 +31,14 @@
             this.radioButtonUndergraduate = new System.Windows.Forms.RadioButton();
             this.radioButtonGraduate = new System.Windows.Forms.RadioButton();
             this.groupBoxUndergraduate = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxUnderName = new System.Windows.Forms.TextBox();
-            this.textBoxGuardName = new System.Windows.Forms.TextBox();
-            this.textBoxGuardAddress = new System.Windows.Forms.TextBox();
             this.comboBoxClassification = new System.Windows.Forms.ComboBox();
+            this.textBoxGuardAddress = new System.Windows.Forms.TextBox();
+            this.textBoxGuardName = new System.Windows.Forms.TextBox();
+            this.textBoxUnderName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.groupBoxGraduate = new System.Windows.Forms.GroupBox();
             this.comboBoxDegree = new System.Windows.Forms.ComboBox();
@@ -94,71 +94,6 @@
             this.groupBoxUndergraduate.TabStop = false;
             this.groupBoxUndergraduate.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 31);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Classification";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 170);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 31);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Guardian\'s Name";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 234);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(251, 31);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Guardian\'s Address";
-            // 
-            // textBoxUnderName
-            // 
-            this.textBoxUnderName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUnderName.Location = new System.Drawing.Point(339, 34);
-            this.textBoxUnderName.Name = "textBoxUnderName";
-            this.textBoxUnderName.Size = new System.Drawing.Size(203, 40);
-            this.textBoxUnderName.TabIndex = 4;
-            // 
-            // textBoxGuardName
-            // 
-            this.textBoxGuardName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGuardName.Location = new System.Drawing.Point(339, 166);
-            this.textBoxGuardName.Name = "textBoxGuardName";
-            this.textBoxGuardName.Size = new System.Drawing.Size(203, 40);
-            this.textBoxGuardName.TabIndex = 5;
-            // 
-            // textBoxGuardAddress
-            // 
-            this.textBoxGuardAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGuardAddress.Location = new System.Drawing.Point(339, 234);
-            this.textBoxGuardAddress.Name = "textBoxGuardAddress";
-            this.textBoxGuardAddress.Size = new System.Drawing.Size(203, 40);
-            this.textBoxGuardAddress.TabIndex = 6;
-            // 
             // comboBoxClassification
             // 
             this.comboBoxClassification.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,6 +107,71 @@
             this.comboBoxClassification.Name = "comboBoxClassification";
             this.comboBoxClassification.Size = new System.Drawing.Size(203, 41);
             this.comboBoxClassification.TabIndex = 7;
+            // 
+            // textBoxGuardAddress
+            // 
+            this.textBoxGuardAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardAddress.Location = new System.Drawing.Point(339, 234);
+            this.textBoxGuardAddress.Name = "textBoxGuardAddress";
+            this.textBoxGuardAddress.Size = new System.Drawing.Size(203, 40);
+            this.textBoxGuardAddress.TabIndex = 6;
+            // 
+            // textBoxGuardName
+            // 
+            this.textBoxGuardName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGuardName.Location = new System.Drawing.Point(339, 166);
+            this.textBoxGuardName.Name = "textBoxGuardName";
+            this.textBoxGuardName.Size = new System.Drawing.Size(203, 40);
+            this.textBoxGuardName.TabIndex = 5;
+            // 
+            // textBoxUnderName
+            // 
+            this.textBoxUnderName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUnderName.Location = new System.Drawing.Point(339, 34);
+            this.textBoxUnderName.Name = "textBoxUnderName";
+            this.textBoxUnderName.Size = new System.Drawing.Size(203, 40);
+            this.textBoxUnderName.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(35, 234);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(251, 31);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Guardian\'s Address";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(35, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(223, 31);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Guardian\'s Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 98);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 31);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Classification";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonAdd
             // 
@@ -201,6 +201,7 @@
             // 
             // comboBoxDegree
             // 
+            this.comboBoxDegree.DisplayMember = "Classification";
             this.comboBoxDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDegree.FormattingEnabled = true;
             this.comboBoxDegree.Items.AddRange(new object[] {
@@ -269,6 +270,7 @@
             this.Controls.Add(this.radioButtonGraduate);
             this.Controls.Add(this.radioButtonUndergraduate);
             this.Name = "formAddStudent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Student Editor";
             this.groupBoxUndergraduate.ResumeLayout(false);
             this.groupBoxUndergraduate.PerformLayout();

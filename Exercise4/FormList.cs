@@ -35,11 +35,13 @@ namespace Exercise4
                     builder.Append("Number: ");
                     builder.AppendLine(fields[1]);
                     builder.Append("Pay Rate: ");
-                    builder.AppendLine(fields[2]);
+                    // Format currency
+                    builder.AppendLine(String.Format("{0:C}", fields[2]));
                     builder.Append("Hours Worked: ");
                     builder.AppendLine(fields[3]);
                     builder.Append("Pay Recieved: ");
-                    builder.AppendLine(fields[4]);
+                    // Format currency
+                    builder.AppendLine(String.Format("{0:C}", fields[4]));
                     builder.AppendLine();
                 }
             }            
